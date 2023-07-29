@@ -8,7 +8,7 @@ const About = () => {
     const [userData, setUserData] = useState({})
     const classlAboutPage = async () => {
         try {
-            const res = await fetch("https://mernserver-wsyc.onrender.com/about",{
+            const res = await fetch("/about",{
                 method:"GET",
                 headers:{
                     Accept : "application/json",
