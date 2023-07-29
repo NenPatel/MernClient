@@ -23,8 +23,9 @@ const Login = () => {
                 email,password
             }) 
         });
-        const data = res.json()
-        if(res.status === 400 || !data){
+        const data = res.json();
+        console.log(data);
+        if(res.status === 405 || !data){
             alert("Invalid Credentials");
             console.log("Invalid Credentials");
         }
