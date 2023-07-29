@@ -6,7 +6,7 @@ const Contact = () => {
   const [userData, setUserData] = useState({name:"",email:"",phone:"",message:""})
   const userContact = async () => {
       try {
-          const res = await fetch("/getData",{
+          const res = await fetch("https://mernserver-wsyc.onrender.com/getData",{
               method:"GET",
               headers:{
                   "Content-Type" : "application/json"
@@ -40,7 +40,7 @@ const Contact = () => {
   const contactForm = async (e) => {
     e.preventDefault();
     const {name,email,phone,message} = userData; 
-    const res = await fetch("/contact",{
+    const res = await fetch("https://mernserver-wsyc.onrender.com/contact",{
       method:"POST",
       headers : {
         "Content-Type" : "application/json"
