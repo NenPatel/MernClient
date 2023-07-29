@@ -9,7 +9,7 @@ const Logout = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        fetch("https://mernserver-wsyc.onrender.com/logout",{
+        fetch("/logout",{
             method:"GET",
             headers:{
                 Accept : "application/json",
