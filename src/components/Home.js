@@ -7,7 +7,7 @@ const Home = () => {
 
   const userHomePage = async () => {
     try {
-        const res = await fetch("/getData",{
+        const res = await fetch("https://mernserver-wsyc.onrender.com/getData",{
             method:"GET",
             headers:{
                 "Content-Type" : "application/json"
