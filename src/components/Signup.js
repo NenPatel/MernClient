@@ -28,13 +28,11 @@ const Signup = () => {
             method: "POST",
             headers : {
                 "Content-Type" : "application/json",
-                "Access-Control-Allow-Origin": "*",
             },
             body: JSON.stringify({
                 name,email,phone,work,password,cpassword
             })
         })
-        console.log("Hello");
         const data = await res.json();
         if(res.status !== 200 || !data){
             alert("Invalid Registration");
