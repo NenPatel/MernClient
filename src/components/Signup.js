@@ -27,7 +27,8 @@ const Signup = () => {
         const res = await fetch("/register",{
             method: "POST",
             headers : {
-                "Content-Type" : "application/json"
+                "Content-Type" : "application/json",
+                "Access-Control-Allow-Origin": "*",
             },
             body: JSON.stringify({
                 name,email,phone,work,password,cpassword
